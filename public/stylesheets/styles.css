@@ -40,7 +40,7 @@ p {
 /* For forms (login, Register, and Change Password) */
 #error {
     display: flex;
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     color: black;
     font-size: 20px;
@@ -182,7 +182,7 @@ a[data-href] {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0px;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1;

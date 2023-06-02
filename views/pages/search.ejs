@@ -30,6 +30,11 @@
                         <%- include('../partials/fetch-places-v'); %>
                         <!-- fetch-festivals-v.ejs -->
                         <%- include('../partials/fetch-festivals-v'); %>
+                        <span class="font-black" id="error">
+                            <% if (messages.error){ %>
+                                <%= messages.error%>
+                                    <% } %>
+                        </span>
                     </div>
                 </div>
             </div>

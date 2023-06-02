@@ -156,15 +156,23 @@ app.get('/search', fetchUser, async function(req,res)
                 getCollectionRecord('Places', {Title: {$regex: query, $options: 'i'}}),
                 getCollectionRecord('Festivals', {Title: {$regex: query, $options: 'i'}})
             ]);
+
+            food_count = Object.keys(foods).length === 0;
+            accommodations_count = Object.keys(accommodations).length === 0;
+            places_count = Object.keys(places).length === 0;
+            festivals_count = Object.keys(festivals).length === 0;
+            if(food_count && accommodations_count && places_count && festivals_count){
+                req.flash("error", "Found Nothing.")
+            }
+
+            res.data['foods'] = foods;
+            res.data['accommodations'] = accommodations;
+            res.data['places'] = places;
+            res.data['festivals'] = festivals;
         }
         catch(e){
             console.log(e);
         }
-
-        res.data['foods'] = foods;
-        res.data['accommodations'] = accommodations;
-        res.data['places'] = places;
-        res.data['festivals'] = festivals;
     }
     
     res.render('pages/search', res.data);
