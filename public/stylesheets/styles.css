@@ -12,6 +12,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------- 
 
             UNIVERSAL ELEMENTS 
@@ -35,19 +40,6 @@ body {
 
 p {
     margin: 15px 0;
-}
-
-/* For forms (login, Register, and Change Password) */
-#error {
-    display: flex;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    color: black;
-    font-size: 20px;
-    padding: 5px 0;
-    text-align: left;
-    word-wrap: normal;
-    width: 310px;
 }
 
 .font-black {
@@ -162,247 +154,101 @@ a[data-href] {
     cursor: pointer;
 }
 
+#food-header,
+#home-header,
+#p-a-l-header,
+#festivals-header,
+#accommodation-header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+}
 
+#body-header {
+    padding: 50px 50px 0 50px;
+}
 
-
-
-/*-----------------------------------------
-
-            TOP NAVIGATION BAR 
-
------------------------------------------*/
-
-#top-nav-bar {
-    min-width: 460px;
-    height: 70px;
-    background: #1B1B1B;
-    border-radius: 0px;
-    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.25);
+#festivals-header-group,
+#p-a-l-header-group,
+#food-header-group,
+#accommodation-header-group {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0px;
-    position: sticky;
+    flex-direction: column;
     width: 100%;
-    top: 0;
-    z-index: 1;
+    bottom: 0;
+    left: 0;
+    padding: 50px;
+    width: 1200px;
+    padding-left: 40px;
+    line-height: 1.5;
+    font-size: 20px;
 }
 
-.top-child {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-
-#menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 85px;
-}
-
-#menu-btn {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#menu-space {
-    visibility: hidden;
-}
-
-
-#home {
-    display: flex;
-    align-items: center;
-}
-
-#home-btn {
-    width: 112px;
-    height: 100%;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    color: #F17C1E;
-}
-
-#search-bar {
-    display: flex;
-}
-
-#search-bar-form {
+#food-header-group>#content,
+#accommodation-header-group>#content {
+    width: 100%;
     padding-left: 10px;
-    padding-right: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+#food-body,
+#p-a-l-body,
+#festivals-body,
+#accommodation-body,
+#userbody,
+#search-body {
+    background-image: url("/img/whitebg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+#food-body-group,
+#festivals-body-group,
+#accommodation-body-group {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.two-vertical-panels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.link-form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 335px;
-}
-
-#search-bar-input {
-    width: 100%;
-    height: 30px;
-    border-radius: 20px 0px 0px 20px;
-    border: 0;
-}
-
-#search-bar-button {
-    display: flex;
-    border-radius: 0px 20px 20px 0px;
-    height: 30px;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
-}
-
-#search-bar-button>img {
-    height: 15px;
-    width: 15px;
-}
-
-input[type=search] {
-    padding: 0 15px;
-    font-size: 13px;
-    margin-bottom: 0px;
-}
-
-#mode {
-    display: flex;
-    align-items: center;
-}
-
-#color-theme {
-    display: flex;
-    width: 45px;
-    height: 45px;
-    visibility: visible;
-    align-items: center;
-}
-
-#greeting {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#greeting #top {
-    font-weight: 800;
-    font-size: 18px;
-}
-
-#greeting>a>p {
-    margin: 0;
-}
-
-/* #user-picture {
-
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    object-fit: cover;
-
-} */
-
-#greeting>.font-white {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0px;
-}
-
-
-#greeting>.font-peach {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0px;
-}
-
-
-
-
-
-
-
-
-
-/*-----------------------------------------
-
-            SIDE NAVIGATION BAR 
-
------------------------------------------*/
-
-#side-nav-bar {
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    width: 85px;
     height: 100%;
-    background: #1B1B1B;
-    transition: transform 0.2s ease;
-    transform: translateX(-100px);
 }
 
-.side-child {
+#link-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    justify-content: right;
+}
+
+#wrap {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    list-style-type: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.side-child>button>#side-menu {
-    padding-top: 3px;
-}
-
-.side-child>a>div>p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 10px;
-    color: white;
-    width: auto;
-}
-
-.side-child button div img {
-    size: 5px;
-    color: white;
-}
-
-#sidebar-cover {
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: visibility 0.1s ease-in-out;
-    visibility: hidden;
-}
-
-#sidebar-cover-button {
-    width: 100%;
-    height: 100%;
-    cursor: default;
-}
-
-#side-menu {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: auto;
 }
 
+#wraphorizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
 
 
 
@@ -415,99 +261,9 @@ input[type=search] {
 
 /*----------------------------------------- 
 
-                HOME PAGE 
+               CARD ELEMENTS 
 
 -----------------------------------------*/
-
-
-#home-header {
-    /* background-image: url("/img/whitebg.jpg"); */
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: center;
-    background-size: cover;
-    height: 800px;
-}
-
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* Ensures the video is behind other content */
-}
-
-.video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Ensures the video covers the entire container */
-}
-
-
-.transparent-background-center {
-    display: flex;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-}
-
-.homebackground {
-    height: 100%;
-    width: 100%;
-}
-
-#home-header-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: justify;
-    width: 100%;
-    padding: 50px;
-}
-
-#home-header-group>#title {
-    text-align: center;
-    font-size: 80px;
-    margin: 0px;
-}
-
-#second-title {
-    font-weight: 600;
-    font-size: 80px;
-    margin: 0;
-}
-
-#third-title {
-    font-weight: 400;
-    text-align: left;
-    font-size: 60px;
-    margin: 0px;
-}
-
-#home-header-group>#content {
-    text-indent: 10%;
-    font-size: 18px;
-    margin: 10px 0px 0px 0px;
-    max-width: 570px;
-}
-
-#home-highlights,
-#home-explore {
-
-    background: url("/img/whitebg.jpg");
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-position: center;
-    background-size: cover;
-    /* height: 800px; */
-    height: auto;
-    width: 100%;
-}
 
 .card-container {
     display: flex;
@@ -596,13 +352,6 @@ input[type=search] {
     font-weight: 400;
 }
 
-.two-vertical-panels {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
 .horizontalcard {
     width: 2000px;
     height: 235px;
@@ -622,11 +371,13 @@ input[type=search] {
     border-radius: 20px;
 }
 
-.horizontalcard:hover, #card-group:hover {
+.horizontalcard:hover,
+#card-group:hover {
     transform: scale(1.021);
 }
 
-.horizontalcard:active, #card-group:active {
+.horizontalcard:active,
+#card-group:active {
     transform: scale(0.95) rotateZ(1.1deg);
 }
 
@@ -646,259 +397,396 @@ input[type=search] {
     align-items: center;
 }
 
-#home-highlights-body {
+/* Added button card styling */
+
+.buttoncard,
+.buttoncard_location {
+    /* Styles for the button inside the card */
+    background-color: #F17C1E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+.disabled_buttoncard {
+    pointer-events: none;
+    background-color: #8d8d8d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+#card-group {
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(225, 225, 225, 0.7);
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     text-align: justify;
-    margin: 50px 40px 0 40px;
-    width: 100%;
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    position: relative;
 }
 
-#home-highlights-body>#title {
-    text-align: left;
-    font-size: 50px;
-    margin: 0px;
-    max-width: 90%;
-}
+#horizontal-card-group {
 
-#home-highlights-body>#content {
-    text-indent: 10%;
-    font-size: 18px;
-    margin: 10px 0px 0px 0px;
-    max-width: 90%;
-    font-weight: 600;
-
-
-
-}
-
-#home-explore-body {
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-}
-
-#home-explore-body>#title {
+    border-radius: 20px;
+    user-select: none;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
     text-align: left;
-    font-size: 50px;
-    margin-top: 40px;
-    margin-left: 85px;
-    width: 400px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    position: relative;
 
+    /* border: black;
+    border-style: solid; */
+}
+
+.card-image {
+    height: 300px;
+    width: 300px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 
 }
 
-#home-explore-body>#content {
-    font-size: 18px;
-    margin-top: 0;
-    margin-left: 85px;
-    margin-right: 85px;
-    max-width: 100%;
 
-}
+
+
+
+
+
 
 
 
 /*-----------------------------------------
 
-                FOOD PAGE 
+            TOP NAVIGATION BAR 
 
 -----------------------------------------*/
 
-#food-body {
-    background-image: url("/img/whitebg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: auto;
+#top-nav-bar {
+    min-width: 460px;
+    height: 70px;
+    background: #1B1B1B;
+    border-radius: 0px;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
-#food-header {
-    background-image: url("/img/food1.png");
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: center;
-    background-size: cover;
-    height: 750px;
+.top-child {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
-#food-header-group {
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+}
+
+#menu-btn {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+#home-btn {
+    width: 112px;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #F17C1E;
+}
+
+#menu-space {
+    visibility: hidden;
+}
+
+#search-bar {
+    display: flex;
+}
+
+#search-bar-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 335px;
+}
+
+#search-bar-input {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px 0px 0px 20px;
+    border: 0;
+}
+
+#search-bar-button {
+    display: flex;
+    border-radius: 0px 20px 20px 0px;
+    height: 30px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+#search-bar-button>img {
+    height: 15px;
+    width: 15px;
+}
+
+input[type=search] {
+    padding: 0 15px;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+/* Future updates*/
+/* #mode {
+    display: flex;
+    align-items: center;
+}
+
+#color-theme {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    visibility: visible;
+    align-items: center;
+} */
+
+#greeting {
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    bottom: 0;
+    align-items: flex-start;
+}
+
+#greeting>#top {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#greeting>a>p {
+    margin: 0;
+}
+
+#greeting>.font-white,
+#greeting>.font-peach {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------
+
+            SIDE NAVIGATION BAR 
+
+-----------------------------------------*/
+
+#side-nav-bar {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 85px;
+    height: 100%;
+    background: #1B1B1B;
+    transition: transform 0.2s ease;
+    transform: translateX(-100px);
+}
+
+.side-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#side-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-top: 3px;
+}
+
+
+.side-child>a>div>p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    color: white;
+    width: auto;
+}
+
+.side-child>button>div>img {
+    size: 5px;
+    color: white;
+}
+
+#sidebar-cover {
+    z-index: 2;
+    position: fixed;
+    top: 0;
     left: 0;
-    padding: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: visibility 0.1s ease-in-out;
+    visibility: hidden;
 }
 
-#food-header-group #content {
-    width: 1000px;
-    padding-left: 10px;
-    line-height: 1.5;
-    font-size: 20px;
+#sidebar-cover-button {
+    width: 100%;
+    height: 100%;
+    cursor: default;
 }
 
-/* .transparent-background-title {
+
+
+
+
+
+
+
+
+
+/*----------------------------------------- 
+
+                HOME PAGE 
+
+-----------------------------------------*/
+
+.transparent-background-center {
+    display: flex;
+    align-items: center;
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
-} */
+}
 
-#food-body-group {
+#home-header-group {
     display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    text-align: left;
-    width: 100%;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-}
-
-/* #food-body-group>#second-title {
-    font-weight: 600;
-    text-align: left;
-    font-size: 50px;
-    margin: 0px;
-    max-width: 100%;
-    margin-left: 30px;
-} */
-
-#body-header {
-    padding: 50px 50px 0 50px;
-}
-
-/*PLACES AND LANDMARKS*/
-
-#p-a-l-header {
-    /* background-image: url("/img/downtown.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 100%; */
-    background-image: url("/img/iloilocitypalbg.jpg");
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: center;
-    background-size: cover;
-    height: 750px;
-}
-
-#p-a-l-header-group {
-    /* display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: justify;
     width: 100%;
-    padding-top: 150px; */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    bottom: 0;
-    left: 0;
     padding: 50px;
-    width: 1200px;
-    line-height: 1.5;
-    font-size: 20px;
 }
 
-#p-a-l-body {
-    background: #FFFFFF;
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Ensures the video is behind other content */
+}
+
+.video-container>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the video covers the entire container */
+}
+
+#home-header-group>#title {
+    text-align: center;
+    font-size: 80px;
+    margin: 0px;
+}
+
+#home-header-group>#content {
+    text-indent: 10%;
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+    max-width: 570px;
+}
+
+#home-highlights,
+#home-explore {
+    background: url("/img/whitebg.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: auto;
+    width: 100%;
 }
 
-/* #p-a-l-body-group>#second-title {
-    font-weight: 600;
-    text-align: center;
-    font-size: 50px;
-    margin: 0px;
-    max-width: 100%;
-}
- */
-
-.link-form {
-    display: flex;
-    flex-direction: row;
+.homebackground {
     height: 100%;
-}
-
-#link-buttons {
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    justify-content: right;
-}
-
-
-/*-----------------------------------------
-                
-                FESTIVALS
-
------------------------------------------*/
-
-#festivals-header {
-    /* background-image: url("/img/paraw-regatta.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: absolute;
-    background-size: cover;
-    height: 800px; */
-    background-image: url("/img/iloilocityfestivalbg.jpg");
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: center;
-    background-size: cover;
-    height: 750px;
-}
-
-#festivals-header-group {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: justify;
     width: 100%;
-    padding-top: 150px; */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 50px;
-    width: 1200px;
-    padding-left: 40px;
-    line-height: 1.5;
-    font-size: 20px;
-}
-
-#festivals-body {
-    background-image: url("/img/whitebg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100% 100%;
-    height: 100%;
-}
-
-#festivals-body-group {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    text-align: left;
-    width: 100%;
-    /* margin-left: 20px;
-    margin-right: 20px; */
 }
 
 #carousel-body {
@@ -913,12 +801,6 @@ input[type=search] {
     height: 350px;
     position: relative;
     overflow: hidden;
-    object-fit: cover;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -949,9 +831,123 @@ input[type=search] {
     right: 2%;
 }
 
+#home-highlights-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    margin: 50px 40px 0 40px;
+    width: 100%;
+}
+
+#home-highlights-body>#title {
+    text-align: left;
+    font-size: 50px;
+    margin: 0px;
+    max-width: 90%;
+}
+
+#home-highlights-body>#content {
+    text-indent: 10%;
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+    max-width: 90%;
+    font-weight: 600;
+}
+
+#home-explore-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+#home-explore-body>#title {
+    text-align: left;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-left: 85px;
+    width: 400px;
+}
+
+#home-explore-body>#content {
+    font-size: 18px;
+    margin-top: 0;
+    margin-left: 85px;
+    margin-right: 85px;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------
+
+                FOOD PAGE 
+
+-----------------------------------------*/
+
+#food-header {
+    background-image: url("/img/food1.png");
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------
+
+            PLACES AND LANDMARKS
+
+-----------------------------------------*/
+
+#p-a-l-header {
+    background-image: url("/img/iloilocitypalbg.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------
+                
+                FESTIVALS
+
+-----------------------------------------*/
+
+#festivals-header {
+    background-image: url("/img/iloilocityfestivalbg.jpg");
+}
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------------------
                 
-                LOGIN AND REGISTRATION
+        LOGIN, REGISTRATION, AND CHANGE PASSWORD
 
 ----------------------------------------------------*/
 
@@ -972,25 +968,25 @@ html body .form-background {
     width: 100%;
 }
 
-.form-center-right {
+.form-center-right,
+.form-center-left {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.form-center-right {
     min-width: 500px;
     background-color: white;
 }
 
-.form-center-right>form{
+.form-center-right>form {
     margin-top: 70px;
     margin-bottom: 70px;
 }
 
 .form-center-left {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100%;
     width: 100%;
     flex-direction: column;
 }
@@ -1045,37 +1041,6 @@ input:focus {
     border: 3px solid #F17C1E;
 }
 
-/* Added button card styling */
-
-.buttoncard,
-.buttoncard_location {
-    /* Styles for the button inside the card */
-    background-color: #F17C1E;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 10px;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-}
-
-.disabled_buttoncard {
-    pointer-events: none;
-    background-color: #8d8d8d;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 10px;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-}
-
 #form-row {
     display: flex;
     justify-content: space-around;
@@ -1084,67 +1049,6 @@ input:focus {
     text-align: justify;
     height: 100%;
     width: 100%;
-}
-
-#card-group {
-    backdrop-filter: blur(1rem);
-    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.1);
-    background-color: rgba(225, 225, 225, 0.7);
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    text-align: justify;
-    height: 600px;
-    width: 300px;
-    border-radius: 10px;
-    margin: 10px;
-    border: 2px solid #c3c6ce;
-    transition: 0.5s ease-out;
-    overflow: visible;
-    position: relative;
-}
-
-/* #card-group:hover {
-    border-color: #F17C1E;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-} */
-
-#horizontal-card-group {
-
-    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.1);
-    background: #FFFFFF;
-    display: flex;
-    border-radius: 20px;
-    user-select: none;
-    justify-content: left;
-    align-items: left;
-    flex-direction: row;
-    text-align: left;
-    height: auto;
-    width: 100%;
-    border-radius: 10px;
-    margin: 10px;
-    border: 2px solid #c3c6ce;
-    transition: 0.5s ease-out;
-    overflow: visible;
-    position: relative;
-
-    /* border: black;
-    border-style: solid; */
-}
-
-.card-image {
-    height: 300px;
-    width: 300px;
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-
 }
 
 .center {
@@ -1193,17 +1097,23 @@ input:focus {
     cursor: pointer;
 }
 
-#wrap {
+/* For forms (login, Register, and Change Password) */
+#error {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: left;
+    word-wrap: normal;
+    width: 310px;
 }
 
-#wraphorizontal {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-}
+
+
+
+
 
 
 
@@ -1216,12 +1126,6 @@ input:focus {
 -----------------------------------------*/
 
 #userbody {
-    background: #1B1B1B;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: auto;
     padding: 0;
 }
 
@@ -1230,7 +1134,6 @@ input:focus {
     height: 80px;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 0 30px 0 30px;
 }
 
@@ -1243,8 +1146,6 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     padding: 0 30px 30px 30px;
-    /* border-top: #F17C1E;
-    border-bottom: #F17C1E; */
     border-top: white;
     border-bottom: white;
     border-left: transparent;
@@ -1273,6 +1174,15 @@ input:focus {
     flex-direction: row;
 }
 
+
+
+
+
+
+
+
+
+
 /*-----------------------------------------
 
                 SEARCH PAGE
@@ -1280,11 +1190,6 @@ input:focus {
 -----------------------------------------*/
 
 #search-body {
-    background: #FFFFFF;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     height: 800px;
     padding: 0;
 }
@@ -1302,6 +1207,14 @@ input:focus {
 }
 
 
+
+
+
+
+
+
+
+
 /*-----------------------------------------
 
             ACCOMMODATION PAGE
@@ -1310,116 +1223,22 @@ input:focus {
 
 #accommodation-header {
     background-image: url("/img/iloilocityaccombg.jpg");
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: center;
-    background-size: cover;
-    height: 750px;
 }
 
-#accommodation-header-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 50px;
-}
 
-#accommodation-header-group #content {
-    width: 100%;
-    padding-left: 10px;
-    line-height: 1.5;
-    font-size: 20px;
-}
 
-#accommodation-body {
-    background-image: url("/img/whitebg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: auto;
-}
 
-#accommodation-body-group {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    text-align: left;
-    width: 100%;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-}
+
+
+
+
+
 
 /*-----------------------------------------
 
-           ACCOMMODATE FETCH PAGE
+            MEDIA ADJUSTMENTS
 
 -----------------------------------------*/
-
-#accomm-body {
-    display: flex;
-    background: #F2F2F2;
-    width: 100%;
-    height: 747px;
-}
-
-#accomm-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-}
-
-#accomm-img>img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
-
-#accomm-details {
-    background: #1B1B1B;
-    height: 100%;
-    min-width: 350px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-#accomm-group {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#accomm-title {
-    font-size: 50px;
-}
-
-#accomm-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 300px;
-    height: 100px;
-}
-
-#accomm-buttons>button {
-    width: 100%;
-    height: 100%;
-    background-color: #383838;
-    margin: 2px 0;
-    border-radius: 6px;
-    padding: 6px;
-}
-
-
-
 
 /*MUST BE BELOW EVERYTHING ALL THE TIME*/
 @media (max-width: 779px) {
@@ -1530,12 +1349,12 @@ input:focus {
         flex-direction: column;
     }
 
-    .form-center-right{
+    .form-center-right {
         width: 100%;
     }
 }
 
-@media (max-height: 779px){
+@media (max-height: 779px) {
     .side-child a div p {
         visibility: hidden;
         height: 0;
